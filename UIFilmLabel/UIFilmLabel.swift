@@ -8,8 +8,24 @@
 
 import UIKit
 
+//MARK: UIColor
+
+extension UIColor {
+    class func colorFromCode(code: Int) -> UIColor {
+        let red = CGFloat((code & 0xFF0000) >> 16) / 255.0 as CGFloat
+        let green = CGFloat((code & 0xFF00) >> 8) / 255.0 as CGFloat
+        let blue = CGFloat(code & 0xFF) / 255.0 as CGFloat
+        
+        return UIColor(red: red, green: green, blue: blue, alpha: 1.0)
+    }
+}
+
+//MARK: UIFilmLabel
 class UIFilmLabel: UILabel {
 
+    /**
+    instance UIFilmLabel
+    */
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -20,6 +36,9 @@ class UIFilmLabel: UILabel {
 
     }
     
+    /**
+    instance UIFilmLabel
+    */
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
@@ -29,6 +48,9 @@ class UIFilmLabel: UILabel {
         self.font = UIFont.boldSystemFontOfSize(14)
     }
 
+    /**
+    setFilmLevelStr
+    */
     func setFilmLevelStr(filmLevelStr:String) {
         switch filmLevelStr {
         case "G", "普":
@@ -56,17 +78,5 @@ class UIFilmLabel: UILabel {
         // Drawing code
     }
     */
-
     
-    
-}
-
-extension UIColor {
-    class func colorFromCode(code: Int) -> UIColor {
-        let red = CGFloat((code & 0xFF0000) >> 16) / 255.0 as CGFloat
-        let green = CGFloat((code & 0xFF00) >> 8) / 255.0 as CGFloat
-        let blue = CGFloat(code & 0xFF) / 255.0 as CGFloat
-        
-        return UIColor(red: red, green: green, blue: blue, alpha: 1.0)
-    }
 }
