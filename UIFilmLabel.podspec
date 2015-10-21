@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = 'UIFilmLabel'
-  spec.version = '1.1'
+  spec.version = '1.2'
   spec.summary = 'UIFilmLabel'
   spec.homepage = 'https://github.com/EthanGit/UIFilmLabel'
   spec.license = { :type => 'MIT', :file => 'LICENSE' }
