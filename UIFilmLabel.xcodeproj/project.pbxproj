@@ -383,6 +383,7 @@
 				AAE385BE1BD72D7600FFEFB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AAE385BF1BD72D7600FFEFB8 /* Build configuration list for PBXNativeTarget "UIFilmLabelTests" */ = {
 			isa = XCConfigurationList;
@@ -391,6 +392,7 @@
 				AAE385C11BD72D7600FFEFB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
