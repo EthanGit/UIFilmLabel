@@ -11,7 +11,7 @@ import UIKit
 //MARK: UIColor
 
 extension UIColor {
-   public class func colorFromCode(code: Int) -> UIColor {
+   public class func colorFromCode(_ code: Int) -> UIColor {
         let red = CGFloat((code & 0xFF0000) >> 16) / 255.0 as CGFloat
         let green = CGFloat((code & 0xFF00) >> 8) / 255.0 as CGFloat
         let blue = CGFloat(code & 0xFF) / 255.0 as CGFloat
@@ -21,7 +21,7 @@ extension UIColor {
 }
 
 //MARK: UIFilmLabel
-public class UIFilmLabel: UILabel {
+open class UIFilmLabel: UILabel {
 
     /**
     instance UIFilmLabel
@@ -30,9 +30,9 @@ public class UIFilmLabel: UILabel {
         super.init(frame: frame)
         
         // Initialization code
-        self.textColor = UIColor.whiteColor()
-        self.textAlignment = .Center
-        self.font = UIFont.boldSystemFontOfSize(14)
+        self.textColor = UIColor.white
+        self.textAlignment = .center
+        self.font = UIFont.boldSystemFont(ofSize: 14)
 
     }
     
@@ -43,31 +43,31 @@ public class UIFilmLabel: UILabel {
         super.init(coder: aDecoder)
         
         // Initialization code
-        self.textColor = UIColor.whiteColor()
-        self.textAlignment = .Center
-        self.font = UIFont.boldSystemFontOfSize(14)
+        self.textColor = UIColor.white
+        self.textAlignment = .center
+        self.font = UIFont.boldSystemFont(ofSize: 14)
     }
 
     /**
     setFilmLevelStr
     */
-    public func setFilmLevelStr(filmLevelStr:String) {
+    open func setFilmLevelStr(_ filmLevelStr:String) {
         switch filmLevelStr {
         case "G", "普":
             self.text = filmLevelStr
             self.backgroundColor = UIColor.colorFromCode(0x4CB503)
         case "P", "護":
             self.text = filmLevelStr
-            self.backgroundColor = UIColor.blueColor()
+            self.backgroundColor = UIColor.blue
         case "PG", "輔":
             self.text = filmLevelStr
-            self.backgroundColor = UIColor.orangeColor()
+            self.backgroundColor = UIColor.orange
         case "R", "限":
             self.text = filmLevelStr
-            self.backgroundColor = UIColor.redColor()
+            self.backgroundColor = UIColor.red
         default:
             self.text = ""
-            self.backgroundColor = UIColor.clearColor()
+            self.backgroundColor = UIColor.clear
         }
     }
     

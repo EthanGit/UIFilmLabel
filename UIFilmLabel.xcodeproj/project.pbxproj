@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		AAE385AC1BD72D7600FFEFB8 /* UIFilmLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = AAE385AB1BD72D7600FFEFB8 /* UIFilmLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AAE385B31BD72D7600FFEFB8 /* UIFilmLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE385A81BD72D7600FFEFB8 /* UIFilmLabel.framework */; settings = {ASSET_TAGS = (); }; };
+		AAE385B31BD72D7600FFEFB8 /* UIFilmLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE385A81BD72D7600FFEFB8 /* UIFilmLabel.framework */; };
 		AAE385B81BD72D7600FFEFB8 /* UIFilmLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE385B71BD72D7600FFEFB8 /* UIFilmLabelTests.swift */; };
-		AAE385C31BD72D8200FFEFB8 /* UIFilmLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE385C21BD72D8200FFEFB8 /* UIFilmLabel.swift */; settings = {ASSET_TAGS = (); }; };
+		AAE385C31BD72D8200FFEFB8 /* UIFilmLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE385C21BD72D8200FFEFB8 /* UIFilmLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,9 +151,11 @@
 				TargetAttributes = {
 					AAE385A71BD72D7600FFEFB8 = {
 						CreatedOnToolsVersion = 7.0.1;
+						LastSwiftMigration = 0820;
 					};
 					AAE385B11BD72D7600FFEFB8 = {
 						CreatedOnToolsVersion = 7.0.1;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
@@ -325,6 +327,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -343,6 +346,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dingok.UIFilmLabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -353,6 +357,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dingok.UIFilmLabelTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -363,6 +368,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dingok.UIFilmLabelTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
